@@ -16,30 +16,29 @@ Herramienta para detectar hooks en funciones sensibles de `ntdll.dll` dentro de 
 - Escaneo de uno o varios procesos específicos o todos los procesos en ejecución.
 - Comparación de stubs con versiones limpias de `ntdll.dll`.
 - Múltiples niveles de verbosidad para la salida:
-  - **0**: Solo indica si una función está hookeada o limpia.
-  - **32**: Muestra las instrucciones desensambladas de los primeros 32 bytes.
-  - **64** (por defecto): Muestra 64 bytes del stub con desensamblado completo.
+  - **summary**: Solo indica si una función está hookeada o limpia.
+  - **stub32**: Muestra las instrucciones desensambladas de los primeros 32 bytes.
+  - **stub64** (por defecto): Muestra 64 bytes del stub con desensamblado completo.
 - Exportación de resultados en formato JSON.
 
 ## Uso
 
 ```bash
-NtHookScanner.exe [process.exe | all] [--verbosity 0|32|64] [--jsonfile output.json]
+NtHookScanner.exe [process.exe | all] [--verbosity summary|stub32|stub64] [--jsonfile output.json]
 ```
 
 ## Ejemplos
 Escanear todos los procesos:
-
 ```bash
 NtHookScanner.exe all
-Escanear notepad.exe y calc.exe, con salida JSON:
 ```
 
+Escanear notepad.exe y calc.exe, con salida JSON:
 ```bash
 NtHookScanner.exe notepad.exe calc.exe --jsonfile hooks.json
-Escanear explorer.exe con nivel de verbosidad 32:
 ```
 
+Escanear explorer.exe con nivel de verbosidad 32:
 ```bash
 NtHookScanner.exe explorer.exe --verbosity 32
 ```
