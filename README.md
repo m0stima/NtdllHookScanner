@@ -16,9 +16,9 @@ Herramienta para detectar hooks en funciones sensibles de `ntdll.dll` dentro de 
 - Escaneo de uno o varios procesos específicos o todos los procesos en ejecución.
 - Comparación de stubs con versiones limpias de `ntdll.dll`.
 - Múltiples niveles de verbosidad para la salida:
-  - **summary**: Solo indica si una función está hookeada o limpia.
+  - **summary** (por defecto): Solo indica si una función está hookeada o limpia.
   - **stub32**: Muestra las instrucciones desensambladas de los primeros 32 bytes.
-  - **stub64** (por defecto): Muestra 64 bytes del stub con desensamblado completo.
+  - **stub64**: Muestra 64 bytes del stub con desensamblado completo.
 - Exportación de resultados en formato JSON.
 
 ## Uso
