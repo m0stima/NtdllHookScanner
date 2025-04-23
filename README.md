@@ -40,7 +40,7 @@ NtHookScanner.exe notepad.exe calc.exe --jsonfile hooks.json
 
 - Escanear explorer.exe con nivel de verbosidad 32:
 ```bash
-NtHookScanner.exe explorer.exe --verbosity 32
+NtHookScanner.exe explorer.exe --verbosity stub32
 ```
 
 ## Compilación
