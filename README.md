@@ -1,4 +1,4 @@
-# NtHookScanner
+# NtdllHookScanner
 
 Herramienta para detectar hooks en funciones sensibles de `ntdll.dll` dentro de procesos en ejecución en sistemas Windows.
 
