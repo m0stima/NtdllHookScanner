@@ -28,17 +28,17 @@ NtHookScanner.exe [process.exe | all] [--verbosity summary|stub32|stub64] [--jso
 ```
 
 ## Ejemplos
-Escanear todos los procesos:
+- Escanear todos los procesos:
 ```bash
 NtHookScanner.exe all
 ```
 
-Escanear notepad.exe y calc.exe, con salida JSON:
+- Escanear notepad.exe y calc.exe, con salida JSON:
 ```bash
 NtHookScanner.exe notepad.exe calc.exe --jsonfile hooks.json
 ```
 
-Escanear explorer.exe con nivel de verbosidad 32:
+- Escanear explorer.exe con nivel de verbosidad 32:
 ```bash
 NtHookScanner.exe explorer.exe --verbosity 32
 ```
